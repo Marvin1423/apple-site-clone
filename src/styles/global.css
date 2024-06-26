@@ -51,21 +51,6 @@ main section:not(:first-of-type){
     margin-block: 10px;
 }
 
-main section h1{
-    color: var(--title-primary-color);
-    font-size: 3.5vw;
-    font-weight: bold;
-    line-height: 60px;
-}
-
-main section h2{
-    font-size: 2vw;
-    color: var(--subtitle-color);
-    font-weight: normal;
-    line-height: 2.5vw;
-    margin: 10px 0px 5px 0px;
-}
-
 main section a{
     color: var(--link-color);
 }
@@ -79,7 +64,22 @@ main section img{
     height: auto;
 }
 
-main section .text-wrapper{
+main .main-section h1{
+    color: var(--title-primary-color);
+    font-size: 3.5vw;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+main .main-section h2{
+    font-size: 2vw;
+    color: var(--subtitle-color);
+    font-weight: normal;
+    line-height: 2.5vw;
+    margin: 10px 0px 5px 0px;
+}
+
+main .main-section .text-wrapper{
     position: absolute;
     top: 5vw;
 }
@@ -96,7 +96,6 @@ main .spirited-section > div{
 
 main .spirited-section > div p{
     font-size: 1.8vw;
-    margin-bottom: 15px;
 }
 
 main .spirited-section > div span{
@@ -113,4 +112,30 @@ main .spirited-section > div:first-of-type{
 main .spirited-section > div:first-of-type p{
     color: var(--title-primary-color);
     font-size: 2.5vw;
+}
+
+main .iphone-section .link-wrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-left: -20px;
+}
+
+main .iphone-section .link-wrapper a{
+    font-size: 1.5vw;
+}
+
+main .iphone-section .text-wrapper{
+    position: absolute;
+    top: 4vw;
+}
+
+main .iphone-section .text-wrapper h1{
+    font-size: 4.5vw;
+    color: var(--bg-primary);
+}
+
+main .iphone-section .text-wrapper h2{
+    font-size: 2vw;
+    color: var(--bg-primary);
 }
